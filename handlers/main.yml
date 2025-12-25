@@ -1,0 +1,5 @@
+---
+- name: restart cyrus_imapd
+  service:
+    name: imapd
+    state: restarted

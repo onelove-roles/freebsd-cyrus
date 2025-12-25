@@ -1,0 +1,8 @@
+require ["fileinto", "mailbox", "imap4flags"];
+
+if header :contains "X-Spam-Status" "Yes, " {
+  fileinto :create "Spam";
+  setflag "\\seen";
+  stop;
+}
+

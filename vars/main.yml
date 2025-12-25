@@ -1,0 +1,3 @@
+---
+cyrus_packages:
+  - name: "cyrus-imapd{{ cyrus_version_short }}"
